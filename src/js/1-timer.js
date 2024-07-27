@@ -65,7 +65,8 @@ function onCountTimer(evt) {
     if (countdownTime !== null) {
       displayCountdown(countdownTime);
     } else {
-      clearInterval(countdownId);
+      clearInterval(countdownId)
+        refs.input.disabled = false;
       };
     } , 1000);
 }
